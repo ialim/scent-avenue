@@ -90,7 +90,9 @@ export const Nav = ({path, name}) => {
   return (
     <div className="sticky inset-0 z-10 flex flex-row justify-between w-screen p-2 border-gray-200 border-b-2 items-center bg-gray-50">
       <div className="flex flex-row justify-evenly items-center">
+          <Link href={path === "/" ? "" : "/"}>
         <div>{icon}</div>
+          </Link>
         <Link href={path}>
           <a className=" ml-1 text-xs">{name}</a>
         </Link>
